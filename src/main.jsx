@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RegisterFormScreen from "./pages/RegisterFormScreen.jsx";
+import Eligble from "./pages/EligbleScreen.jsx";
+import NotEligible from "./pages/NotEligible.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -13,6 +15,14 @@ const router = createBrowserRouter([
 	{
 		path: "/register",
 		element: <RegisterFormScreen />,
+	},
+	{
+		path: "/eligible",
+		element: <Eligble />,
+	},
+	{
+		path: "/noteligible",
+		element: <NotEligible />,
 	},
 ]);
 
