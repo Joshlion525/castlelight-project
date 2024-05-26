@@ -11,7 +11,7 @@ const Eligble = () => {
 		<div className="backGround min-h-screen font-Ciutadella flex flex-col justify-between">
 			<div>
 				<Nav />
-				<div className="text-white text-center px-16 itali mt-10 ">
+				<div className="text-white text-center px-10 itali mt-10 ">
 					<h1 className="text-3xl mb-3">
 						Thank you for signing up for the Castle Lite ESPN
 						Experience!

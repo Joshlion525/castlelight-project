@@ -10,7 +10,7 @@ const NotEligible = () => {
 		<div className="backGround min-h-screen font-Ciutadella flex flex-col justify-between">
 			<div>
 				<Nav />
-				<div className="text-white text-center px-16 italic mt-10">
+				<div className="text-white text-center px-10 italic mt-10">
 					<div className="flex justify-center mb-2">
 						<img src={sadFace} alt="" />
 					</div>
