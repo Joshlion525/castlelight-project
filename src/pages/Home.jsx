@@ -5,6 +5,7 @@ import Logo from "../assets/CastleLogoWhite2.svg";
 import ESPN from "../assets/ESPN_logos1.svg";
 import logo from "../assets/Group9.svg";
 import { useNavigate } from "react-router-dom";
+import RegisterFormScreen from "./RegisterFormScreen";
 
 
 const Home = () => {
@@ -21,7 +22,7 @@ const Home = () => {
 		}
 	};
 	return (
-		<div>
+		<div className="backGround font-Ciutadella">
 			{showModal && (
 				<div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 italic">
 					<div className="bg-white w-[80%] p-3 max-h-[55%] overflow-auto ">
@@ -82,54 +83,21 @@ const Home = () => {
 						WITH A LIVE BASKETBALL GAME IN NYC
 					</h1>
 				</div>
-				<div className="flex justify-center pt-2 pb-8 px-3">
+				<div className="flex justify-center py-2 px-3">
 					<img src={Three} alt="" className="w-full" />
-				</div>
-				<div className="px-3">
-					<span className="block w-full h-[1px] bg-white"></span>
-				</div>
-				<div className="text-white italic text-center bg-[#012169] rounded-3xl shadow-2xl my-6 mx-3 py-20 px-2">
-					<h1 className="text-2xl mb-10">HOW TO PARTICIPATE</h1>
-					<p className="mb-10">
-						a) Make a funny but creative 15-seconds video doing a
-						Castle Lite Crown Cork toss, Castle Lite bottle should
-						be in the video.        
-					</p>
-					<p className="mb-10">
-						b) Upload the video on social media, tag @castleliteng
-						and #CastleLiteEspnExperience #Litesideofthecourt{" "}
-					</p>
-					<p className="mb-10">
-						c) Be present on the 8th of June at the designated venue
-						(venue to be communicated via email) at 8am to
-						participate in the games{" "}
-					</p>
-					<p className="mb-10">
-						{" "}
-						d) Participate in and Win all games at the stipulated
-						time
-					</p>
-					<p className="mb-10">
-						e) Celebrate your win with your friends and family on
-						socials  
-					</p>
-					<p>
-						{" "}
-						N/B: MUST HAVE A VALID INTERNATIONAL PASSPORT AND USA
-						VISA TO PARTICIPATE  
-					</p>
-				</div>
-				<div className="px-3">
-					<span className="block w-full h-[1px] bg-white"></span>
 				</div>
 				<div className="flex justify-center py-8">
 					<button
 						className="bg-[#00833F] text-white py-3 px-20 rounded-sm"
-						onClick={() => navigate("/register")}
+						onClick={() => navigate("/participate")}
 					>
-						REGISTER
+						HOW TO PARTICIPATE
 					</button>
 				</div>
+				<div className="px-3 mb-10">
+					<span className="block w-full h-[1px] bg-white"></span>
+				</div>
+				<RegisterFormScreen />
 			</div>
 			<div className="bg-[#012169] border-t-2">
 				<div className="flex justify-center items-center gap-7 py-5">

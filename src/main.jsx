@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RegisterFormScreen from "./pages/RegisterFormScreen.jsx";
 import Eligble from "./pages/EligbleScreen.jsx";
 import NotEligible from "./pages/NotEligible.jsx";
+import Home from "./pages/Home.jsx";
+import Notlegal from "./pages/Notlegal.jsx";
+import Participate from "./pages/Participate.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -13,8 +16,16 @@ const router = createBrowserRouter([
 		element: <App />,
 	},
 	{
-		path: "/register",
-		element: <RegisterFormScreen />,
+		path: "/home",
+		element: <Home />,
+	},
+	{
+		path: "/notlegal",
+		element: <Notlegal />,
+	},
+	{
+		path: "/participate",
+		element: <Participate />,
 	},
 	{
 		path: "/eligible",

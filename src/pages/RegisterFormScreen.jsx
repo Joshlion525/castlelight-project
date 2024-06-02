@@ -67,8 +67,7 @@ const RegisterFormScreen = () => {
 	};
 
 	return (
-		<div className="backGround min-h-screen font-Ciutadella">
-			<Nav />
+		<div className=" min-h-screen font-Ciutadella">
 			<div className="px-3 pb-10">
 				<form action="" onSubmit={submitData}>
 					<div className="flex flex-col gap-2 mb-5">

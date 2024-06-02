@@ -1,9 +1,10 @@
+import Eligible from "./pages/Eligible";
 import Home from "./pages/Home";
 
 function App() {
 	return (
 		<div className="backGround min-h-screen font-Ciutadella">
-			<Home />
+			<Eligible />
 		</div>
 	);
 }
